@@ -1,0 +1,174 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    line-height:1.6;
+    background:#f4f4f4;
+}
+
+/* Navigation */
+header{
+    background:#222;
+    color:white;
+    position:sticky;
+    top:0;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 50px;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+}
+
+nav ul li{
+    margin-left:20px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+nav ul li a:hover{
+    color:#00bcd4;
+}
+
+/* Hero Section */
+.hero{
+    height:100vh;
+    background:linear-gradient(to right,#667eea,#764ba2);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+}
+
+.hero h1{
+    font-size:50px;
+}
+
+.hero p{
+    margin:15px 0;
+    font-size:20px;
+}
+
+.btn{
+    display:inline-block;
+    padding:10px 20px;
+    background:white;
+    color:#333;
+    text-decoration:none;
+    border-radius:5px;
+    font-weight:bold;
+}
+
+.btn:hover{
+    background:#ddd;
+}
+
+/* Sections */
+section{
+    padding:60px 10%;
+}
+
+section h2{
+    text-align:center;
+    margin-bottom:20px;
+    color:#333;
+}
+
+/* Skills */
+.cards{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:20px;
+}
+
+.card{
+    background:white;
+    padding:20px;
+    width:150px;
+    text-align:center;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Projects */
+.project-card{
+    background:white;
+    margin:20px 0;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Contact */
+form{
+    max-width:600px;
+    margin:auto;
+}
+
+form input,
+form textarea{
+    width:100%;
+    padding:12px;
+    margin:10px 0;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+
+form button{
+    width:100%;
+    padding:12px;
+    border:none;
+    background:#333;
+    color:white;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+form button:hover{
+    background:#555;
+}
+
+/* Footer */
+footer{
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:15px;
+}
+
+/* Responsive Design */
+@media(max-width:768px){
+
+    nav{
+        flex-direction:column;
+    }
+
+    nav ul{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    nav ul li{
+        margin:10px 0;
+    }
+
+    .hero h1{
+        font-size:35px;
+    }
+}
